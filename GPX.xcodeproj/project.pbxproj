@@ -12,7 +12,6 @@
 		13D46EC6152ECF2400C9A168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D46EB3152ECF2400C9A168 /* Foundation.framework */; };
 		13D46ED2152ECF2400C9A168 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13D46ED0152ECF2400C9A168 /* InfoPlist.strings */; };
 		13D46ED5152ECF2400C9A168 /* GPXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46ED4152ECF2400C9A168 /* GPXTests.m */; };
-		4FC95880C07D428C900D93DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C23F77BBF4FE3A0B4A441 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +24,7 @@
 		13D46ED3152ECF2400C9A168 /* GPXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXTests.h; sourceTree = "<group>"; };
 		13D46ED4152ECF2400C9A168 /* GPXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXTests.m; sourceTree = "<group>"; };
 		13D46F42152ED24900C9A168 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		907C23F77BBF4FE3A0B4A441 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91CDCBE1989509300001583 /* GPXTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GPXTests-Prefix.pch"; sourceTree = "<group>"; };
-		F6E0E9FE4FD54A6C971E12A3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +34,6 @@
 			files = (
 				13D46EC3152ECF2400C9A168 /* SenTestingKit.framework in Frameworks */,
 				13D46EC6152ECF2400C9A168 /* Foundation.framework in Frameworks */,
-				4FC95880C07D428C900D93DB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +46,6 @@
 				13D46ECD152ECF2400C9A168 /* GPXTests */,
 				13D46EB2152ECF2400C9A168 /* Frameworks */,
 				13D46EB1152ECF2400C9A168 /* Products */,
-				F6E0E9FE4FD54A6C971E12A3 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,7 +63,6 @@
 				13D46F42152ED24900C9A168 /* UIKit.framework */,
 				13D46EB3152ECF2400C9A168 /* Foundation.framework */,
 				13D46EC2152ECF2400C9A168 /* SenTestingKit.framework */,
-				907C23F77BBF4FE3A0B4A441 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,12 +95,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13D46EDB152ECF2400C9A168 /* Build configuration list for PBXNativeTarget "GPXTests" */;
 			buildPhases = (
-				F57F210DF867415AB13438DA /* Check Pods Manifest.lock */,
 				13D46EBC152ECF2400C9A168 /* Sources */,
 				13D46EBD152ECF2400C9A168 /* Frameworks */,
 				13D46EBE152ECF2400C9A168 /* Resources */,
 				13D46EBF152ECF2400C9A168 /* ShellScript */,
-				AE6C23E9244045A08891E74E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,36 +160,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		AE6C23E9244045A08891E74E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F57F210DF867415AB13438DA /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -285,7 +247,6 @@
 		};
 		13D46EDC152ECF2400C9A168 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6E0E9FE4FD54A6C971E12A3 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -301,7 +262,6 @@
 		};
 		13D46EDD152ECF2400C9A168 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6E0E9FE4FD54A6C971E12A3 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
