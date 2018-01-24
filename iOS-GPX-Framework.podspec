@@ -21,5 +21,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'GPX'
   s.ios.framework = 'UIKit'
-  s.dependency 'TBXML', git: 'https://github.com/mstukalo/TBXML.git'
+  # s.dependency 'TBXML', git: 'https://github.com/mstukalo/TBXML.git'
+
+  s.subspec 'TBXML' do |tb|
+    s.source = { :git => "https://github.com/mstukalo/TBXML.git", :tag => s.version.to_s  }
+  end
 end
