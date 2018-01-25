@@ -10,7 +10,7 @@
 #import "GPXConst.h"
 #import "GPXElementSubclass.h"
 #import "GPXRoot.h"
-@import TBXML;
+#import "TBXML.h"
 
 @implementation GPXParser
 

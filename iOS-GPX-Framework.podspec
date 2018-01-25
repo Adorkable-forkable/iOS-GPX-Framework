@@ -21,4 +21,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'GPX'
   s.ios.framework = 'UIKit'
+
+  s.subspec 'TBXML' do |tb|
+    tb.source_files  = "TBXML/TBXML-Code/*.{h,m}", "TBXML/TBXML-Headers/*.{h,m}"
+  end
 end
