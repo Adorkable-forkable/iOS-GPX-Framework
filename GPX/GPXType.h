@@ -23,77 +23,77 @@ typedef NS_ENUM(NSInteger, GPXFix) {
  @param value The string which to convert CGFloat. A value ≥−90 and ≤90.
  @return A CGFloat from a value.
  */
-+ (CGFloat)latitude:(NSString *)value;
++ (CGFloat)latitude:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given CGFloat.
  @param latitude The CGFloat which to convert NSString. A value ≥−90 and ≤90.
  @return A NSString from a latitude.
  */
-+ (NSString *)valueForLatitude:(CGFloat)latitude;
++ (NSString * _Nonnull)valueForLatitude:(CGFloat)latitude;
 
 /** Return the CGFloat object from a given string.
  @param value The string which to convert CGFloat. A value ≥−180 and ≤180.
  @return A CGFloat from a value.
  */
-+ (CGFloat)longitude:(NSString *)value;
++ (CGFloat)longitude:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given CGFloat.
  @param longitude The CGFloat which to convert NSString. A value ≥−180 and ≤180.
  @return A NSString from a longitude.
  */
-+ (NSString *)valueForLongitude:(CGFloat)longitude;
++ (NSString * _Nonnull)valueForLongitude:(CGFloat)longitude;
 
 /** Return the CGFloat object from a given string.
  @param value The string which to convert CGFloat. A value ≥0 and ≤360.
  @return A CGFloat from a value.
  */
-+ (CGFloat)degress:(NSString *)value;
++ (CGFloat)degress:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given CGFloat.
  @param degress The CGFloat which to convert NSString. A value ≥0 and ≤360.
  @return A NSString from a degress.
  */
-+ (NSString *)valueForDegress:(CGFloat)degress;
++ (NSString * _Nonnull)valueForDegress:(CGFloat)degress;
 
 /** Return the GPXFix from a given string.
  @param value The string which to convert GPXFix.
  @return A GPXFix from a value.
  */
-+ (GPXFix)fix:(NSString *)value;
++ (GPXFix)fix:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given GPXFix.
  @param fix The GPXFix which to convert NSString.
  @return A NSString from a fix.
  */
-+ (NSString *)valueForFix:(GPXFix)fix;
++ (NSString * _Nonnull)valueForFix:(GPXFix)fix;
 
 /** Return the NSInteger object from a given string.
  @param value The string which to convert NSInteger. A value ≥0 and ≤1023.
  @return A NSInteger from a value.
  */
-+ (NSInteger)dgpsStation:(NSString *)value;
++ (NSInteger)dgpsStation:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given NSInteger.
  @param dgpsStation The NSInteger which to convert NSString. A value ≥0 and ≤1023.
  @return A NSString from a dgpsStation.
  */
-+ (NSString *)valueForDgpsStation:(NSInteger)dgpsStation;
++ (NSString * _Nonnull)valueForDgpsStation:(NSInteger)dgpsStation;
 
 /** Return the CGFloat object from a given string.
  @param value The string which to convert CGFloat.
  @return A CGFloat from a value.
  */
-+ (CGFloat)decimal:(NSString *)value;
++ (CGFloat)decimal:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given CGFloat.
  @param decimal The CGFloat which to convert NSString.
  @return A NSString from a decimal.
  */
-+ (NSString *)valueForDecimal:(CGFloat)decimal;
++ (NSString * _Nonnull)valueForDecimal:(CGFloat)decimal;
 
 /** Return the NSDate object from a given string.
  
- pecifies a single moment in time. The value is a dateTime, which can be one of the following:
+ Specifies a single moment in time. The value is a dateTime, which can be one of the following:
  
  - *gYear* gives year resolution
  - *gYearMonth* gives month resolution
@@ -138,24 +138,24 @@ typedef NS_ENUM(NSInteger, GPXFix) {
  @param value The string which to convert NSDate.
  @return A NSDate from a value.
  */
-+ (NSDate *)dateTime:(NSString *)value;
++ (NSDate * _Nullable)dateTime:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given NSDate.
  @param date The NSDate which to convert NSString.
  @return A dateTime (YYYY-MM-DDThh:mm:ssZ) value from a date.
  */
-+ (NSString *)valueForDateTime:(NSDate *)date;
++ (NSString * _Nonnull)valueForDateTime:(NSDate * _Nonnull)date;
 
 /** Return the NSInteger object from a given string.
  @param value The string which to convert NSInteger. A value ≥0
  @return A NSInteger from a value.
  */
-+ (NSInteger)nonNegativeInteger:(NSString *)value;
++ (NSInteger)nonNegativeInteger:(NSString * _Nonnull)value;
 
 /** Return the NSString object from a given NSInteger.
  @param integer The NSInteger which to convert NSString. A value ≥0
  @return A NSString from a integer.
  */
-+ (NSString *)valueForNonNegativeInteger:(NSInteger)integer;
++ (NSString * _Nonnull)valueForNonNegativeInteger:(NSInteger)integer;
 
 @end

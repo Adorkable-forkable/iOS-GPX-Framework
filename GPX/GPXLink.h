@@ -19,13 +19,13 @@
 /// ---------------------------------
 
 /** Text of hyperlink. */
-@property (strong, nonatomic) NSString *text;
+@property (strong, nonatomic) NSString * _Nullable text;
 
 /** Mime type of content (image/jpeg) */
-@property (strong, nonatomic) NSString *mimetype;
+@property (strong, nonatomic) NSString * _Nullable mimetype;
 
 /** URL of hyperlink. */
-@property (strong, nonatomic) NSString *href;
+@property (strong, nonatomic) NSString * _Nonnull href;
 
 
 /// ---------------------------------
@@ -36,6 +36,6 @@
  @param href URL of hyperlink
  @return A newly created link element.
  */
-+ (GPXLink *)linkWithHref:(NSString *)href;
++ (GPXLink * _Nonnull)linkWithHref:(NSString *_Nonnull)href;
 
 @end

@@ -23,10 +23,10 @@
 /// ---------------------------------
 
 /** A Track Point holds the coordinates, elevation, timestamp, and metadata for a single point in a track. */
-@property (strong, nonatomic, readonly) NSArray *trackpoints;
+@property (strong, nonatomic, readonly) NSArray<GPXTrackPoint*> * _Nonnull trackpoints;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic) GPXExtensions * _Nullable extensions;
 
 
 /// ---------------------------------
@@ -38,7 +38,7 @@
  @param longitude The longitude of the point.
  @return A newly created trackpoint element.
  */
-- (GPXTrackPoint *)newTrackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
+- (GPXTrackPoint * _Nonnull)newTrackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
 
 
 /// ---------------------------------
@@ -48,12 +48,12 @@
 /** Inserts a given GPXTrackPoint object at the end of the trackpoint array.
  @param trackpoint The GPXTrackPoint to add to the end of the trackpoint array.
  */
-- (void)addTrackpoint:(GPXTrackPoint *)trackpoint;
+- (void)addTrackpoint:(GPXTrackPoint * _Nonnull)trackpoint;
 
 /** Adds the GPXTrackPoint objects contained in another given array to the end of the trackpoint array.
  @param array An array of GPXTrackPoint objects to add to the end of the trackpoint array.
  */
-- (void)addTrackpoints:(NSArray *)array;
+- (void)addTrackpoints:(NSArray<GPXTrackPoint*> * _Nonnull)array;
 
 
 /// ---------------------------------
@@ -63,6 +63,6 @@
 /** Removes all occurrences in the trackpoint array of a given GPXTrackPoint object.
  @param trackpoint The GPXTrackPoint object to remove from the trackpoint array.
  */
-- (void)removeTrackpoint:(GPXTrackPoint *)trackpoint;
+- (void)removeTrackpoint:(GPXTrackPoint * _Nonnull)trackpoint;
 
 @end

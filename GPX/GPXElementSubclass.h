@@ -13,38 +13,38 @@
 
 // Tag
 
-+ (NSString *)tagName;
-+ (NSArray *)implementClasses;
++ (NSString * _Nullable)tagName;
++ (NSArray * _Nullable)implementClasses;
 
 
 // Initializing a Element
 
-- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent;
+- (id _Nonnull)initWithXMLElement:(TBXMLElement * _Nonnull)element parent:(GPXElement * _Nullable)parent;
 
 
 // Parsing
-- (NSString *)valueOfAttributeNamed:(NSString *)name xmlElement:(TBXMLElement*)element;
-- (NSString *)valueOfAttributeNamed:(NSString *)name xmlElement:(TBXMLElement*)element required:(BOOL)required;
-- (NSString *)textForSingleChildElementNamed:(NSString *)name xmlElement:(TBXMLElement *)element;
-- (NSString *)textForSingleChildElementNamed:(NSString *)name xmlElement:(TBXMLElement *)element required:(BOOL)required;
-- (GPXElement *)childElementOfClass:(Class)class xmlElement:(TBXMLElement *)element;
-- (GPXElement *)childElementOfClass:(Class)class xmlElement:(TBXMLElement *)element required:(BOOL)required;
-- (GPXElement *)childElementNamed:(NSString *)name class:(Class)class xmlElement:(TBXMLElement *)element;
-- (GPXElement *)childElementNamed:(NSString *)name class:(Class)class xmlElement:(TBXMLElement *)element required:(BOOL)required;
-- (void)childElementsOfClass:(Class)class xmlElement:(TBXMLElement *)element eachBlock:(void (^)(GPXElement *element))eachBlock;
+- (NSString * _Nullable)valueOfAttributeNamed:(NSString * _Nonnull)name xmlElement:(TBXMLElement* _Nonnull)element;
+- (NSString * _Nullable)valueOfAttributeNamed:(NSString * _Nonnull)name xmlElement:(TBXMLElement* _Nonnull)element required:(BOOL)required;
+- (NSString * _Nullable)textForSingleChildElementNamed:(NSString * _Nonnull)name xmlElement:(TBXMLElement * _Nonnull)element;
+- (NSString * _Nullable)textForSingleChildElementNamed:(NSString * _Nonnull)name xmlElement:(TBXMLElement * _Nonnull)element required:(BOOL)required;
+- (GPXElement * _Nullable)childElementOfClass:(Class _Nonnull )class xmlElement:(TBXMLElement * _Nonnull)element;
+- (GPXElement * _Nullable)childElementOfClass:(Class _Nonnull )class xmlElement:(TBXMLElement * _Nonnull)element required:(BOOL)required;
+- (GPXElement * _Nullable)childElementNamed:(NSString * _Nonnull)name class:(Class _Nonnull )class xmlElement:(TBXMLElement * _Nonnull)element;
+- (GPXElement * _Nonnull)childElementNamed:(NSString * _Nonnull)name class:(Class _Nonnull )class xmlElement:(TBXMLElement * _Nonnull)element required:(BOOL)required;
+- (void)childElementsOfClass:(Class _Nonnull)class xmlElement:(TBXMLElement * _Nonnull)element eachBlock:(void (^_Nonnull)(GPXElement * _Nonnull element))eachBlock;
 
 
 // Generating
 
-- (void)gpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel;
-- (void)addOpenTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel;
-- (void)addChildTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel;
-- (void)addCloseTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel;
+- (void)gpx:(NSMutableString * _Nonnull)gpx indentationLevel:(NSInteger)indentationLevel;
+- (void)addOpenTagToGpx:(NSMutableString * _Nonnull)gpx indentationLevel:(NSInteger)indentationLevel;
+- (void)addChildTagToGpx:(NSMutableString * _Nonnull)gpx indentationLevel:(NSInteger)indentationLevel;
+- (void)addCloseTagToGpx:(NSMutableString * _Nonnull)gpx indentationLevel:(NSInteger)indentationLevel;
 
-- (void)gpx:(NSMutableString *)gpx addPropertyForValue:(NSString *)value tagName:(NSString *)tagName indentationLevel:(NSInteger)indentationLevel;
-- (void)gpx:(NSMutableString *)gpx addPropertyForValue:(NSString *)value tagName:(NSString *)tagName attribute:(NSString *)attribute indentationLevel:(NSInteger)indentationLevel;
-- (void)gpx:(NSMutableString *)gpx addPropertyForValue:(NSString *)value defaultValue:(NSString *)defaultValue tagName:(NSString *)tagName indentationLevel:(NSInteger)indentationLevel;
-- (void)gpx:(NSMutableString *)gpx addPropertyForValue:(NSString *)value defaultValue:(NSString *)defaultValue tagName:(NSString *)tagName attribute:(NSString *)attribute indentationLevel:(NSInteger)indentationLevel;
-- (NSString *)indentForIndentationLevel:(NSInteger)indentationLevel;
+- (void)gpx:(NSMutableString * _Nonnull)gpx addPropertyForValue:(NSString *_Nonnull)value tagName:(NSString * _Nonnull)tagName indentationLevel:(NSInteger)indentationLevel;
+- (void)gpx:(NSMutableString * _Nonnull)gpx addPropertyForValue:(NSString * _Nonnull)value tagName:(NSString * _Nonnull)tagName attribute:(NSString * _Nullable)attribute indentationLevel:(NSInteger)indentationLevel;
+- (void)gpx:(NSMutableString * _Nonnull)gpx addPropertyForValue:(NSString * _Nullable)value defaultValue:(NSString * _Nullable)defaultValue tagName:(NSString * _Nonnull)tagName indentationLevel:(NSInteger)indentationLevel;
+- (void)gpx:(NSMutableString * _Nonnull)gpx addPropertyForValue:(NSString * _Nullable)value defaultValue:(NSString * _Nullable)defaultValue tagName:(NSString * _Nonnull)tagName attribute:(NSString * _Nullable)attribute indentationLevel:(NSInteger)indentationLevel;
+- (NSString * _Nonnull)indentForIndentationLevel:(NSInteger)indentationLevel;
 
 @end

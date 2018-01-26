@@ -20,13 +20,13 @@
 /// ---------------------------------
 
 /** Year of copyright. */
-@property (strong, nonatomic) NSDate *year;
+@property (strong, nonatomic) NSDate * _Nullable year;
 
 /** Link to external file containing license text. */
-@property (strong, nonatomic) NSString *license;
+@property (strong, nonatomic) NSString * _Nullable license;
 
 /** Copyright holder (TopoSoft, Inc.) */
-@property (strong, nonatomic) NSString *author;
+@property (strong, nonatomic) NSString * _Nullable author;
 
 
 /// ---------------------------------
@@ -37,6 +37,6 @@
  @param author Copyright holder (TopoSoft, Inc.)
  @return A newly created copyright element.
  */
-+ (GPXCopyright *)copyroghtWithAuthor:(NSString *)author;
++ (GPXCopyright * _Nonnull)copyroghtWithAuthor:(NSString * _Nonnull)author;
 
 @end

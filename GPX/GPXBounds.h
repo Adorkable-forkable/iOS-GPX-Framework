@@ -42,6 +42,6 @@
  @param maxLongitude The maximum longitude.
  @return A newly created bounds element.
  */
-+ (GPXBounds *)boundsWithMinLatitude:(CGFloat)minLatitude minLongitude:(CGFloat)minLongitude maxLatitude:(CGFloat)maxLatitude maxLongitude:(CGFloat)maxLongitude;
++ (GPXBounds * _Nonnull)boundsWithMinLatitude:(CGFloat)minLatitude minLongitude:(CGFloat)minLongitude maxLatitude:(CGFloat)maxLatitude maxLongitude:(CGFloat)maxLongitude;
 
 @end

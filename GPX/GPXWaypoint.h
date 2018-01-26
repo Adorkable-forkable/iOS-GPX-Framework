@@ -28,7 +28,7 @@
     Date and time in are in Univeral Coordinated Time (UTC), not local time! 
     Conforms to ISO 8601 specification for date/time representation.
     Fractional seconds are allowed for millisecond timing in tracklogs */
-@property (strong, nonatomic) NSDate *time;
+@property (strong, nonatomic) NSDate * _Nullable time;
 
 /** Magnetic variation (in degrees) at the point */
 @property (nonatomic, assign) CGFloat magneticVariation;
@@ -39,27 +39,27 @@
 /** The GPS name of the waypoint. This field will be transferred to and from the GPS. 
     GPX does not place restrictions on the length of this field or the characters contained in it. 
     It is up to the receiving application to validate the field before sending it to the GPS. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString * _Nullable name;
 
 /** GPS waypoint comment. Sent to GPS as comment. */
-@property (strong, nonatomic) NSString *comment;
+@property (strong, nonatomic) NSString * _Nullable comment;
 
 /** A text description of the element. Holds additional information about the element intended for the user, not the GPS. */
-@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic) NSString * _Nullable desc;
 
 /** Source of data. Included to give user some idea of reliability and accuracy of data. 
     "Garmin eTrex", "USGS quad Boston North", e.g. */
-@property (strong, nonatomic) NSString *source;
+@property (strong, nonatomic) NSString * _Nullable source;
 
 /** Link to additional information about the waypoint. */
-@property (strong, nonatomic) NSArray *links;
+@property (strong, nonatomic) NSArray<GPXLink*> * _Nonnull links;
 
 /** Text of GPS symbol name. For interchange with other programs, use the exact spelling of the symbol as displayed on the GPS. 
     If the GPS abbreviates words, spell them out. */
-@property (strong, nonatomic) NSString *symbol;
+@property (strong, nonatomic) NSString * _Nullable symbol;
 
 /** Type (classification) of the waypoint. */
-@property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic) NSString * _Nullable type;
 
 /** Type of GPX fix. */
 @property (nonatomic, assign) NSInteger fix;
@@ -83,7 +83,7 @@
 @property (nonatomic, assign) NSInteger DGPSid;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic) GPXExtensions * _Nullable extensions;
 
 /** The latitude of the point. Decimal degrees, WGS84 datum. */
 @property (nonatomic, assign) CGFloat latitude;
@@ -101,7 +101,7 @@
  @param longitude The longitude of the point.
  @return A newly created waypoint element.
  */
-+ (GPXWaypoint *)waypointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
++ (GPXWaypoint * _Nonnull)waypointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
 
 
 /// ---------------------------------
@@ -112,7 +112,7 @@
  @param href URL of hyperlink
  @return A newly created link element.
  */
-- (GPXLink *)newLinkWithHref:(NSString *)href;
+- (GPXLink * _Nonnull)newLinkWithHref:(NSString * _Nonnull)href;
 
 
 /// ---------------------------------
@@ -122,12 +122,12 @@
 /** Inserts a given GPXLink object at the end of the link array.
  @param link The GPXLink to add to the end of the link array.
  */
-- (void)addLink:(GPXLink *)link;
+- (void)addLink:(GPXLink * _Nonnull)link;
 
 /** Adds the GPXLink objects contained in another given array to the end of the link array.
  @param array An array of GPXLink objects to add to the end of the link array.
  */
-- (void)addLinks:(NSArray *)array;
+- (void)addLinks:(NSArray<GPXLink*> * _Nonnull)array;
 
 
 /// ---------------------------------
@@ -137,6 +137,6 @@
 /** Removes all occurrences in the link array of a given GPXLink object.
  @param link The GPXLink object to remove from the link array.
  */
-- (void)removeLink:(GPXLink *)link;
+- (void)removeLink:(GPXLink * _Nonnull)link;
 
 @end

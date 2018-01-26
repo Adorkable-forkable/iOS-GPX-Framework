@@ -22,12 +22,12 @@
 /// ---------------------------------
 
 /** Name of person or organization. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString * _Nullable name;
 
 /** Email address. */
-@property (strong, nonatomic) GPXEmail *email;
+@property (strong, nonatomic) GPXEmail * _Nullable email;
 
 /** Link to Web site or other external information about person. */
-@property (strong, nonatomic) GPXLink *link;
+@property (strong, nonatomic) GPXLink * _Nullable link;
 
 @end

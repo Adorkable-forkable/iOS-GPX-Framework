@@ -21,7 +21,7 @@
 /// ---------------------------------
 
 /** Ordered list of geographic points. */
-@property (strong, nonatomic, readonly) NSArray *points;
+@property (strong, nonatomic, readonly) NSArray<GPXPoint*> * _Nonnull points;
 
 
 /// ---------------------------------
@@ -33,7 +33,7 @@
  @param longitude The longitude of the point.
  @return A newly created point element.
  */
-- (GPXPoint *)newPointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
+- (GPXPoint * _Nonnull)newPointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
 
 
 /// ---------------------------------
@@ -43,12 +43,12 @@
 /** Inserts a given GPXPoint object at the end of the point array.
  @param point The GPXPoint to add to the end of the point array.
  */
-- (void)addPoint:(GPXPoint *)point;
+- (void)addPoint:(GPXPoint * _Nonnull)point;
 
 /** Adds the GPXPoint objects contained in another given array to the end of the point array.
  @param array An array of GPXPoint objects to add to the end of the point array.
  */
-- (void)addPoints:(NSArray *)array;
+- (void)addPoints:(NSArray<GPXPoint*> * _Nonnull)array;
 
 
 /// ---------------------------------
@@ -58,6 +58,6 @@
 /** Removes all occurrences in the point array of a given GPXPoint object.
  @param point The GPXPoint object to remove from the point array.
  */
-- (void)removePoint:(GPXPoint *)point;
+- (void)removePoint:(GPXPoint * _Nonnull)point;
 
 @end

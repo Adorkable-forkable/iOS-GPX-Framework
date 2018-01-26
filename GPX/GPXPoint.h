@@ -22,7 +22,7 @@
 @property (nonatomic, assign) CGFloat elevation;
 
 /** The time that the point was recorded. */
-@property (strong, nonatomic) NSDate *time;
+@property (strong, nonatomic) NSDate * _Nullable time;
 
 /** The latitude of the point. Decimal degrees, WGS84 datum */
 @property (nonatomic, assign) CGFloat latitude;
@@ -40,6 +40,6 @@
  @param longitude The longitude of the point.
  @return A newly created point element.
  */
-+ (GPXPoint *)pointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
++ (GPXPoint * _Nonnull)pointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
 
 @end

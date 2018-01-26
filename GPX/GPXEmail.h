@@ -19,10 +19,10 @@
 /// ---------------------------------
 
 /** id half of email address (billgates2004) */
-@property (strong, nonatomic) NSString *emailID;
+@property (strong, nonatomic) NSString * _Nonnull emailID;
 
 /** domain half of email address (hotmail.com) */
-@property (strong, nonatomic) NSString *domain;
+@property (strong, nonatomic) NSString * _Nonnull domain;
 
 
 /// ---------------------------------
@@ -34,6 +34,6 @@
  @param domain half of email address (hotmail.com)
  @return A newly created email element.
  */
-+ (GPXEmail *)emailWithID:(NSString *)emailID domain:(NSString *)domain;
++ (GPXEmail * _Nonnull)emailWithID:(NSString * _Nonnull)emailID domain:(NSString * _Nonnull)domain;
 
 @end

@@ -26,30 +26,30 @@
 /// ---------------------------------
 
 /** The name of the GPX file. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString * _Nullable name;
 
 /** A description of the contents of the GPX file. */
-@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic) NSString * _Nullable desc;
 
 /** The person or organization who created the GPX file. */
-@property (strong, nonatomic) GPXAuthor *author;
+@property (strong, nonatomic) GPXAuthor * _Nullable author;
 
 /** Copyright and license information governing use of the file. */
-@property (strong, nonatomic) GPXCopyright *copyright;
+@property (strong, nonatomic) GPXCopyright * _Nullable copyright;
 
 /** URLs associated with the location described in the file. */
-@property (strong, nonatomic) GPXLink *link;
+@property (strong, nonatomic) GPXLink * _Nullable link;
 
 /** The creation date of the file. */
-@property (strong, nonatomic) NSDate *time;
+@property (strong, nonatomic) NSDate * _Nullable time;
 
 /** Keywords associated with the file. Search engines or databases can use this information to classify the data. */
-@property (strong, nonatomic) NSString *keyword;
+@property (strong, nonatomic) NSString * _Nullable keyword;
 
 /** Minimum and maximum coordinates which describe the extent of the coordinates in the file. */
-@property (strong, nonatomic) GPXBounds *bounds;
+@property (strong, nonatomic) GPXBounds * _Nullable bounds;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic) GPXExtensions * _Nullable extensions;
 
 @end
