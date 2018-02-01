@@ -40,13 +40,13 @@
 @property (strong, nonatomic) GPXMetadata * _Nullable metadata;
 
 /** A list of waypoints. */
-@property (strong, nonatomic, readonly) NSArray * _Nonnull waypoints;
+@property (strong, nonatomic, readonly) NSArray<GPXWaypoint*> * _Nonnull waypoints;
 
 /** A list of routes. */
-@property (strong, nonatomic, readonly) NSArray * _Nonnull routes;
+@property (strong, nonatomic, readonly) NSArray<GPXRoute*> * _Nonnull routes;
 
 /** A list of tracks. */
-@property (strong, nonatomic, readonly) NSArray * _Nonnull tracks;
+@property (strong, nonatomic, readonly) NSArray<GPXTrack*> * _Nonnull tracks;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
 @property (strong, nonatomic) GPXExtensions * _Nullable extensions;
