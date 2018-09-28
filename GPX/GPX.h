@@ -1,29 +1,41 @@
 //
 //  GPX.h
-//  GPX Framework
+//  GPX
 //
-//  Created by NextBusinessSystem on 12/04/06.
-//  Copyright (c) 2012 NextBusinessSystem Co., Ltd. All rights reserved.
+//  Created by Ian Grossberg on 9/27/18.
 //
 
 #import <UIKit/UIKit.h>
-#import "GPXParser.h"
-#import "GPXConst.h"
-#import "GPXType.h"
+
+//! Project version number for GPX.
+FOUNDATION_EXPORT double GPXVersionNumber;
+
+//! Project version string for GPX.
+FOUNDATION_EXPORT const unsigned char GPXVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <GPX/PublicHeader.h>
+
+
 #import "GPXRoot.h"
-#import "GPXMetadata.h"
-#import "GPXWaypoint.h"
-#import "GPXRoutePoint.h"
-#import "GPXTrackPoint.h"
-#import "GPXRoute.h"
-#import "GPXTrack.h"
-#import "GPXExtensions.h"
-#import "GPXTrackSegment.h"
-#import "GPXCopyright.h"
-#import "GPXLink.h"
-#import "GPXEmail.h"
-#import "GPXPerson.h"
+
 #import "GPXAuthor.h"
+#import "GPXBounds.h"
+#import "GPXConst.h"
+#import "GPXEmail.h"
+#import "GPXLink.h"
+#import "GPXMetadata.h"
+#import "GPXPerson.h"
 #import "GPXPoint.h"
 #import "GPXPointSegment.h"
-#import "GPXBounds.h"
+#import "GPXRoute.h"
+#import "GPXRoutePoint.h"
+#import "GPXTrack.h"
+#import "GPXTrackPoint.h"
+#import "GPXTrackSegment.h"
+#import "GPXWaypoint.h"
+
+#import "GPXExtensions.h"
+
+//#import "GPXElementSubclass.h"
+
+#import "GPXParser.h"

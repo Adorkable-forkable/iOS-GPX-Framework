@@ -6,6 +6,9 @@
 //  Copyright (c) 2012 NextBusinessSystem Co., Ltd. All rights reserved.
 //
 
+#include <Foundation/Foundation.h>
+#include <UIKit/UIKit.h>
+
 typedef NS_ENUM(NSInteger, GPXFix) {
     GPXFixNone = 0,
     GPXFix2D,

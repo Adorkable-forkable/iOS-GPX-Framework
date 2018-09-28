@@ -8,6 +8,9 @@
 
 @class GPXRoot;
 
+#include <Foundation/Foundation.h>
+#include <UIKit/UIKit.h>
+
 
 /** Instances of this class parse GPX documents.
  */

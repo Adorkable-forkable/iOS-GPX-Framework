@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C23253A215DBF2F000DD001"
-               BuildableName = "GPX.framework"
-               BlueprintName = "GPX"
-               ReferencedContainer = "container:GPX.xcodeproj">
+               BlueprintIdentifier = "8290352414D9F5B200ACF7E4"
+               BuildableName = "libTBXML-iOS.a"
+               BlueprintName = "TBXML-iOS"
+               ReferencedContainer = "container:TBXML.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13D46EC0152ECF2400C9A168"
-               BuildableName = "GPXTests.octest"
-               BlueprintName = "GPXTests"
-               ReferencedContainer = "container:GPX.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -55,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3C23253A215DBF2F000DD001"
-            BuildableName = "GPX.framework"
-            BlueprintName = "GPX"
-            ReferencedContainer = "container:GPX.xcodeproj">
+            BlueprintIdentifier = "8290352414D9F5B200ACF7E4"
+            BuildableName = "libTBXML-iOS.a"
+            BlueprintName = "TBXML-iOS"
+            ReferencedContainer = "container:TBXML.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -70,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8290352414D9F5B200ACF7E4"
+            BuildableName = "libTBXML-iOS.a"
+            BlueprintName = "TBXML-iOS"
+            ReferencedContainer = "container:TBXML.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
