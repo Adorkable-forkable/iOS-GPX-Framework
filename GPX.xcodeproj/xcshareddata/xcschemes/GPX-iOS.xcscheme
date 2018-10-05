@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3C23253A215DBF2F000DD001"
                BuildableName = "GPX.framework"
-               BlueprintName = "GPX"
+               BlueprintName = "GPX-iOS"
                ReferencedContainer = "container:GPX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -57,7 +58,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3C23253A215DBF2F000DD001"
             BuildableName = "GPX.framework"
-            BlueprintName = "GPX"
+            BlueprintName = "GPX-iOS"
             ReferencedContainer = "container:GPX.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

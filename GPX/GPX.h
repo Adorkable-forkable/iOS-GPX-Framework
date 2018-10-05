@@ -5,7 +5,11 @@
 //  Created by Ian Grossberg on 9/27/18.
 //
 
+#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#else
+#import <Cocoa/Cocoa.h>
+#endif
 
 //! Project version number for GPX.
 FOUNDATION_EXPORT double GPXVersionNumber;

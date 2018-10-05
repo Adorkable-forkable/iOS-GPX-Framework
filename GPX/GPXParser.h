@@ -9,7 +9,11 @@
 @class GPXRoot;
 
 #include <Foundation/Foundation.h>
-#include <UIKit/UIKit.h>
+#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#else
+#import <Cocoa/Cocoa.h>
+#endif
 
 
 /** Instances of this class parse GPX documents.
